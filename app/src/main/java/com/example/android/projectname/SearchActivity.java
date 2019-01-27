@@ -3,11 +3,13 @@ package com.example.android.projectname;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class githubactivity extends AppCompatActivity {
+public class SearchActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_githubactivity);
+        setContentView(R.layout.activity_search);
+
+
     }
 }

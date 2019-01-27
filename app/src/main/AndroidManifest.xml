@@ -9,8 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".TestActivity" />
-        <activity android:name=".githubactivity"></activity>
+        <activity android:name=".SearchActivity" />
+
+        <meta-data
+            android:name="com.google.android.actions" />
     </application>
 
 </manifest>

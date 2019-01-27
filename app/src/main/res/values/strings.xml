@@ -1,3 +1,18 @@
 <resources>
     <string name="app_name">ProjectName</string>
+    <string name="search_button_text">Search</string>
+    <string name="search_page_text">Search</string>
+    <string name="textView_branch">Branch</string>
+    <string name="checkBox_min_salary">Min. Salary</string>
+    <string name="checkBox_company">Company</string>
+    <string name="textView_advanced_search_options">Advanced Search Options</string>
+    <string name="checkBox_region">Region</string>
+    <string-array name = "advanced_search_options">
+        <item>Region</item>
+        <item>Branch</item>
+        <item>Minimum Salary</item>
+        <item>Experience</item>
+    </string-array>
+    <string name = "dialog_button_search">Search</string>
+    <string name="search_hint">Enter search term</string>
 </resources>
