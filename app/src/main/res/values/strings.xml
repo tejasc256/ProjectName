@@ -4,23 +4,66 @@
     <string name="search_page_text">Search</string>
     <string name="textView_advanced_search_options">Advanced Search Options</string>
     <string-array name="advanced_search_options">
+        <item>Choose an advanced search option...</item>
         <item>Region</item>
         <item>Branch</item>
         <item>Minimum Salary</item>
         <item>Experience</item>
     </string-array>
     <string name="search_hint">Enter search term</string>
+    <string name="salary_hint">Enter salary</string>
     <string name="forgot_password_heading">Forgot Password</string>
     <string name="forgot_password_hint">Enter e-mail address</string>
     <string name="forgot_password_button_text">Reset Password</string>
     <string-array name="region_options">
-        <item>Bangalore</item>
-        <item>Pune</item>
+        <item>Delhi</item>
+        <item>Mumbai</item>
+        <item>Kolkata</item>
+        <item>Chennai</item>
+        <item>Bengaluru</item>
+        <item>Hyderabad</item>
+        <item>Chandigarh</item>
+        <item>Jaipur</item>
+        <item>Dispur</item>
+        <item>Itanagar</item>
+        <item>Patna</item>
+        <item>Raipur</item>
+        <item>Jammu</item>
+        <item>Shimla</item>
+        <item>Dehradun</item>
+        <item>Lucknow</item>
+        <item>Bhopal</item>
+        <item>Gandhi Nagar</item>
+        <item>Panaji</item>
+        <item>Tiruvananthapuram</item>
+        <item>Bhubaneshwar</item>
+        <item>Ranchi</item>
+        <item>Gangtok</item>
+        <item>Shillong</item>
+        <item>Agartala</item>
+        <item>Imphal</item>
+        <item>Kohima</item>
+        <item>Aizawal</item>
     </string-array>
     <string-array name="branch_options">
-        <item>
-            Computer Science
-        </item>
-        <item>Electrical Eng</item>
+        <item>Computer Science</item>
+        <item>Information Technology</item>
+        <item>Electronics and Communication</item>
+        <item>Electrical</item>
+        <item>Electrical and Instrumentation </item>
+        <item>Mechanical</item>
+        <item>Civil Engineering</item>
+        <item>Chemical</item>
+        <item>Aeronautical</item>
+        <item>Agricultural</item>
+        <item>Mining engineering</item>
+        <item>Biochemical</item>
+        <item>Metallurgical</item>
+    </string-array>
+    <string-array name="experience_options">
+        <item>Less than 1 year</item>
+        <item>1-5 years</item>
+        <item>5-10 years</item>
+        <item>10+ years</item>
     </string-array>
 </resources>
