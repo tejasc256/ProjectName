@@ -3,11 +3,11 @@
     android:layout_width="match_parent" android:layout_height="match_parent" android:padding="16dp">
 
     <EditText
-        android:hint="@string/search_hint"
-        android:id="@+id/adv_search_string"
+        android:id="@+id/adv_salary"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        />
+        android:hint="@string/salary_hint"
+        android:inputType="number" />
 
 
 </RelativeLayout>
