@@ -33,7 +33,7 @@ public class ForgotPassword extends AppCompatActivity {
                     startActivity(i);
                 }
                 else{
-                    Toast.makeText(getApplicationContext(), toastStringInvalid, Toast.LENGTH_SHORT).show();
+                    emailaddress.setError("Please enter a valid email");
                 }
             }
         });
