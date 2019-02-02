@@ -14,11 +14,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".SearchActivity">
-        </activity>
+
         <activity android:name=".SearchResults" />
         <activity android:name=".ForgotPassword" />
         <activity
+
+            android:name=".SearchActivity"
+            android:label="@string/title_activity_scrolling" />
+
             android:name=".Login"
             android:label="@string/title_activity_login" >
         <intent-filter>
@@ -27,6 +30,7 @@
             <category android:name="android.intent.category.LAUNCHER" />
         </intent-filter>
         </activity>
+
         <activity
             android:name=".About_Us"
             android:label="@string/title_activity_about__us"
