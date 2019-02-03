@@ -66,6 +66,74 @@
         <item>5-10 years</item>
         <item>10+ years</item>
     </string-array>
+
+    <string-array name="numbers">
+        <item>Education Qualification</item>
+        <item>10</item>
+        <item>12</item>
+        <item>Undergraduate</item>
+        <item>Postgraduate</item>
+        <item>Doctorate</item>
+        <item>Diploma</item>
+    </string-array>
+
+    <string-array name="numbers2">
+        <item>Location Preference</item>
+        <item>Delhi</item>
+        <item>Mumbai</item>
+        <item>Kolkata</item>
+        <item>Chennai</item>
+        <item>Bengaluru</item>
+        <item>Hyderabad</item>
+        <item>Chandigarh</item>
+        <item>Jaipur</item>
+        <item>Dispur</item>
+        <item>Itanagar</item>
+        <item>Patna</item>
+        <item>Raipur</item>
+        <item>Jammu</item>
+
+        <item>Shimla</item>
+
+
+        <item>Dehradun</item>
+        <item>Lucknow</item>
+        <item>Bhopal</item>
+        <item>Gandhi Nagar</item>
+
+        <item>Panaji</item>
+
+        <item>Tiruvananthapuram</item>
+
+        <item>Bhubaneshwar</item>
+        <item>Ranchi</item>
+
+        <item>Gangtok</item>
+        <item>Shillong</item>
+        <item>Agartala</item>
+        <item>Imphal</item>
+        <item>Kohima</item>
+        <item>Aizawal</item>
+    </string-array>
+
+    <string-array name="numbers3">
+        <item>Specialisation</item>
+        <item>Computer Science</item>
+        <item>Information Technology</item>
+        <item>Electronics and Communication</item>
+        <item>Electrical</item>
+        <item>Electrical and Instrumentation </item>
+        <item>Mechanical</item>
+        <item>Civil Engineering</item>
+        <item>Chemical</item>
+        <item>Aeronautical</item>
+        <item>Agricultural</item>
+        <item>Mining engineering</item>
+        <item>Biochemical</item>
+
+        <item>Metallurgical</item>
+    </string-array>
+
     <string name="title_activity_login">Sign in</string>
     <!-- Strings related to login -->
     <string name="prompt_email">Email</string>

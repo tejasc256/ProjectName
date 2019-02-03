@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".EngineersRegistrationForm">
+
+
+<android.support.design.widget.TextInputLayout
+    android:id="@+id/textInputLayout"
+    android:layout_width="395dp"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp"
+    android:layout_marginLeft="16dp"
+    android:layout_marginTop="16dp"
+    android:layout_marginEnd="16dp"
+    android:layout_marginRight="16dp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <android.support.design.widget.TextInputEditText
+        android:id="@+id/NameInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Name"
+        android:inputType="textPersonName" />
+</android.support.design.widget.TextInputLayout>
+
+<android.support.design.widget.TextInputLayout
+    android:id="@+id/textInputLayout2"
+    android:layout_width="395dp"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp"
+    android:layout_marginLeft="16dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginEnd="16dp"
+    android:layout_marginRight="16dp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/tvDate">
+
+    <android.support.design.widget.TextInputEditText
+        android:id="@+id/ContactInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Contact"
+        android:inputType="numberSigned" />
+</android.support.design.widget.TextInputLayout>
+
+
+<TextView
+    android:id="@+id/textView2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp"
+    android:layout_marginLeft="16dp"
+    android:layout_marginTop="16dp"
+    android:text="Gender"
+    android:textSize="20sp"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/textInputLayout2" />
+
+<android.support.design.widget.TextInputLayout
+    android:id="@+id/textInputLayout3"
+    android:layout_width="395dp"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp"
+    android:layout_marginLeft="16dp"
+    android:layout_marginEnd="16dp"
+    android:layout_marginRight="16dp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/radioGroup">
+
+    <android.support.design.widget.TextInputEditText
+        android:id="@+id/JobExperienceInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Job experience(Years)"
+        android:inputType="number" />
+</android.support.design.widget.TextInputLayout>
+
+<Spinner
+    android:id="@+id/spinner1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp"
+    android:layout_marginLeft="16dp"
+    android:layout_marginTop="16dp"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/textInputLayout3" />
+
+<Spinner
+    android:id="@+id/spinner2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp"
+    android:layout_marginLeft="16dp"
+    android:layout_marginTop="16dp"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/spinner1" />
+
+<Spinner
+    android:id="@+id/spinner3"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp"
+    android:layout_marginLeft="16dp"
+    android:layout_marginTop="16dp"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/spinner2" />
+
+<TextView
+    android:id="@+id/tvDate"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp"
+    android:layout_marginLeft="16dp"
+    android:layout_marginTop="16dp"
+    android:hint="Date Of Birth"
+    android:textSize="18sp"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/textInputLayout" />
+
+<RadioGroup
+    android:id="@+id/radioGroup"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp"
+    android:layout_marginLeft="16dp"
+    android:layout_marginTop="8dp"
+    app:layout_constraintStart_toEndOf="@+id/textView2"
+    app:layout_constraintTop_toBottomOf="@+id/textInputLayout2">
+
+    <RadioButton
+        android:id="@+id/MaleButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Male"
+        tools:layout_editor_absoluteX="88dp"
+        tools:layout_editor_absoluteY="462dp" />
+
+    <RadioButton
+        android:id="@+id/FemaleButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Female"
+        tools:layout_editor_absoluteX="39dp"
+        tools:layout_editor_absoluteY="572dp" />
+
+</RadioGroup>
+
+<android.support.design.widget.TextInputLayout
+    android:id="@+id/textInputLayout4"
+    android:layout_width="395dp"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp"
+    android:layout_marginLeft="16dp"
+    android:layout_marginTop="16dp"
+    android:layout_marginEnd="16dp"
+    android:layout_marginRight="16dp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/spinner3">
+
+    <android.support.design.widget.TextInputEditText
+        android:id="@+id/SalaryInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Expected Salary(Rs PA)"
+        android:inputType="number" />
+</android.support.design.widget.TextInputLayout>
+
+<Button
+    android:id="@+id/SubmitButton"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="161dp"
+    android:layout_marginLeft="161dp"
+    android:layout_marginTop="125dp"
+    android:layout_marginEnd="162dp"
+    android:layout_marginRight="162dp"
+    android:layout_marginBottom="141dp"
+    android:text="Submit"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/textInputLayout4" />
+
+</android.support.constraint.ConstraintLayout>

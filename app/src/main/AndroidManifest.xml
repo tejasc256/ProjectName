@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.android.projectname">
-
     <!-- To auto-complete the email text field in the login form with the user's emails -->
     <uses-permission android:name="android.permission.GET_ACCOUNTS" />
     <uses-permission android:name="android.permission.READ_PROFILE" />
@@ -14,6 +13,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar">
+        <activity android:name=".TrainerReviewRatingSubmit"></activity>
+        <activity android:name=".TrainerReviewRating" />
+        <activity android:name=".ComapnyRegistrationFormSubmit" />
+        <activity android:name=".CompanyRegistrationForm" />
+        <activity android:name=".EngineersRegistrationFormSubmit" />
+        <activity android:name=".EngineersRegistrationForm" />
+        <activity android:name=".company_registration_form" />
         <activity android:name=".Login">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -30,7 +36,7 @@
             android:name=".About_Us"
             android:label="@string/title_activity_about__us"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".FAQ"></activity>
+        <activity android:name=".FAQ" />
     </application>
 
 </manifest>
