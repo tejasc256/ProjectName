@@ -29,6 +29,10 @@ import android.widget.AutoCompleteTextView;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
+
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -36,6 +40,8 @@ import java.util.regex.Pattern;
 
 import static android.Manifest.permission.READ_CONTACTS;
 
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 /**
  * A login screen that offers login via email/password.
  */
@@ -63,9 +69,10 @@ public class Login extends AppCompatActivity implements LoaderCallbacks<Cursor> 
     private EditText mPasswordView;
     private View mProgressView;
     private View mLoginFormView;
-
+    private FirebaseAuth mAuth;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        mAuth = FirebaseAuth.getInstance();
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
         // Set up the login form.
@@ -80,7 +87,7 @@ public class Login extends AppCompatActivity implements LoaderCallbacks<Cursor> 
         fgb2.setOnClickListener(new OnClickListener(){
             @Override
             public void onClick(View v)
-            {startActivity(new Intent(Login.this,FAQ.class));}
+            {startActivity(new Intent(Login.this,About_Us.class));}
         });
 
         mEmailView = (AutoCompleteTextView) findViewById(R.id.email);
@@ -113,6 +120,8 @@ public class Login extends AppCompatActivity implements LoaderCallbacks<Cursor> 
 
 
     }
+
+
 
     private void populateAutoComplete() {
         if (!mayRequestContacts()) {
