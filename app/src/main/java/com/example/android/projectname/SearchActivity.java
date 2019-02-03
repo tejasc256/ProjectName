@@ -20,7 +20,7 @@ import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.Toast;
 
-public class SearchActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener, AdvancedSearchDialog.AdvancedDialogListner {
+public class SearchActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,26 +28,23 @@ public class SearchActivity extends AppCompatActivity implements AdapterView.OnI
         setContentView(R.layout.activity_search);
 
         Button searchbutton = (Button) findViewById(R.id.button_search);
-        Button forgotpass = (Button) findViewById(R.id.buttonfp);
         searchbutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 EditText searchitem = (EditText) findViewById(R.id.editText_search);
                 String searchstring = searchitem.getText().toString();
 
-                Intent intent = new Intent(SearchActivity.this, SearchResults.class);
-                intent.putExtra("searchstring", searchstring);
-                startActivity(intent);
+                if(searchstring.isEmpty()){
+                    searchitem.setError("Enter search term");
+                }
+                else {
+                    Intent intent = new Intent(SearchActivity.this, SearchResults.class);
+                    intent.putExtra("searchstring", searchstring);
+                    startActivity(intent);
+                }
             }
         });
 
-        forgotpass.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent i = new Intent(SearchActivity.this, ForgotPassword.class);
-                startActivity(i);
-            }
-        });
 
         Spinner searchspinner = (Spinner) findViewById(R.id.spinner_search);
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
@@ -61,7 +58,7 @@ public class SearchActivity extends AppCompatActivity implements AdapterView.OnI
     @Override
     public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
 
-        if(position == 0){
+        if(position == 1){
             AlertDialog.Builder rBuilder = new AlertDialog.Builder(SearchActivity.this);
             View rview = getLayoutInflater().inflate(R.layout.andvanced_search_dialog_2, null);
             rBuilder.setTitle("Select Region");
@@ -91,7 +88,7 @@ public class SearchActivity extends AppCompatActivity implements AdapterView.OnI
 
         }
 
-        else if(position == 1){
+        else if(position == 2){
 
             AlertDialog.Builder rBuilder = new AlertDialog.Builder(SearchActivity.this);
             View rview = getLayoutInflater().inflate(R.layout.andvanced_search_dialog_2, null);
@@ -120,28 +117,68 @@ public class SearchActivity extends AppCompatActivity implements AdapterView.OnI
             AlertDialog rDialog = rBuilder.create();
             rDialog.show();
 
+        }
+
+        else if(position == 3){
+
+            AlertDialog.Builder rBuilder = new AlertDialog.Builder(SearchActivity.this);
+            View rview = getLayoutInflater().inflate(R.layout.advanced_search_dialog_1, null);
+            final EditText editTextsalary = (EditText) rview.findViewById(R.id.adv_salary);
+
+            rBuilder.setTitle("Enter Expected Salary")
+                    .setPositiveButton("Search", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+                            if(editTextsalary.getText().toString().isEmpty()){
+                                editTextsalary.setError("Enter a valid number");
+                            }
+                            else{
+                                Intent i = new Intent(SearchActivity.this, SearchResults.class);
+                                i.putExtra("searchstring", editTextsalary.getText().toString());
+                                startActivity(i);
+                            }
+                        }
+                    });
+                            rBuilder.setView(rview);
+                            AlertDialog rDialog = rBuilder.create();
+                            rDialog.show();
 
         }
 
-        else{
-            openDialog();
+        else if(position == 4){
+
+            AlertDialog.Builder rBuilder = new AlertDialog.Builder(SearchActivity.this);
+            View rview = getLayoutInflater().inflate(R.layout.andvanced_search_dialog_2, null);
+            rBuilder.setTitle("Select Experience");
+            final Spinner rspinner = (Spinner) rview.findViewById(R.id.spinner_region);
+            ArrayAdapter<String> radapter = new ArrayAdapter<String>(SearchActivity.this, android.R.layout.simple_spinner_item,
+                    getResources().getStringArray(R.array.experience_options));
+            radapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+            rspinner.setAdapter(radapter);
+            rBuilder.setPositiveButton("Search", new DialogInterface.OnClickListener() {
+                @Override
+                public void onClick(DialogInterface dialog, int which) {
+                    if(rspinner.getSelectedItem().toString().isEmpty()){
+                        String toastStringregionnegative = "Please select an option";
+                        Toast.makeText(getApplicationContext(), toastStringregionnegative, Toast.LENGTH_SHORT).show();
+                    }
+                    else{
+                        Intent i = new Intent(SearchActivity.this, SearchResults.class);
+                        i.putExtra("searchstring", rspinner.getSelectedItem().toString());
+                        startActivity(i);
+                    }
+                }
+            });
+
+            rBuilder.setView(rview);
+            AlertDialog rDialog = rBuilder.create();
+            rDialog.show();
         }
 
     }
 
     @Override
     public void onNothingSelected(AdapterView<?> parent) {
-
-    }
-
-    public void openDialog(){
-        DialogFragment exampledialog = new AdvancedSearchDialog();
-        exampledialog.show(getSupportFragmentManager(), "example dialog");
-
-    }
-
-    @Override
-    public void applyTexts(String searchterm) {
 
     }
 }

@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/page_bg"
+    android:background="@drawable/loginbg"
     android:gravity="center_horizontal"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingTop="64dp"
@@ -36,7 +36,6 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-
             <ImageView
                 android:id="@+id/imageView3"
                 android:layout_width="103dp"
@@ -47,7 +46,6 @@
                 tools:layout_editor_absoluteY="64dp"
 
                 tools:srcCompat="@drawable/logo" />
-
             <android.support.design.widget.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
@@ -57,13 +55,15 @@
                     style="@android:style/Widget.AutoCompleteTextView"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="40dp"
+                    android:layout_marginTop="102dp"
+
                     android:backgroundTint="#ffffff"
                     android:cursorVisible="false"
                     android:hint="@string/prompt_email"
                     android:inputType="textEmailAddress"
                     android:maxLines="1"
-
+                    android:textColorHighlight="#ffffff"
+                    android:textColorLink="#ffffff"
                     android:singleLine="true"
                     android:textColor="#FFFFFF"
                     android:textColorHint="#FFFFFF" />
@@ -125,9 +125,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="28dp"
-                android:background="#010b9b"
+                android:background="@android:color/transparent"
                 android:text="@string/forgot_btn"
-                android:textColor="#FFFFFF"
+                android:textColor="#80DEEA"
                 android:textStyle="bold" />
 
 
