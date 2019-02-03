@@ -74,6 +74,7 @@ public class Login extends AppCompatActivity implements LoaderCallbacks<Cursor> 
     protected void onCreate(Bundle savedInstanceState) {
         mAuth = FirebaseAuth.getInstance();
         super.onCreate(savedInstanceState);
+        getWindow().setBackgroundDrawableResource(R.drawable.loginbg5) ;
         setContentView(R.layout.activity_login);
         // Set up the login form.
         Button fgb1=(Button)findViewById(R.id.forgot_password);
