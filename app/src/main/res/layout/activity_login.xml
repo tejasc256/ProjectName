@@ -5,7 +5,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/loginbg"
     android:gravity="center_horizontal"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingTop="64dp"
@@ -38,14 +37,14 @@
 
             <ImageView
                 android:id="@+id/imageView3"
-                android:layout_width="103dp"
-                android:layout_height="67dp"
+                android:layout_width="197dp"
+                android:layout_height="136dp"
                 android:layout_gravity="center_horizontal"
-                app:srcCompat="@mipmap/logo"
+                app:srcCompat="@android:drawable/ic_media_play"
                 tools:layout_editor_absoluteX="1dp"
                 tools:layout_editor_absoluteY="64dp"
 
-                tools:srcCompat="@drawable/logo" />
+                tools:srcCompat="@android:drawable/ic_media_play" />
             <android.support.design.widget.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
@@ -55,7 +54,7 @@
                     style="@android:style/Widget.AutoCompleteTextView"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="102dp"
+                    android:layout_marginTop="16dp"
 
                     android:backgroundTint="#ffffff"
                     android:cursorVisible="false"
@@ -112,7 +111,7 @@
                 style="?android:textAppearanceSmall"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
+                android:layout_marginTop="12dp"
                 android:background="@android:color/transparent"
                 android:text="@string/register_btn"
                 android:textSize="16sp"
@@ -124,10 +123,10 @@
                 style="?android:textAppearanceSmall"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="28dp"
-                android:background="@android:color/transparent"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/button_bg2"
                 android:text="@string/forgot_btn"
-                android:textColor="#80DEEA"
+                android:textColor="#ffffff"
                 android:textStyle="bold" />
 
 
