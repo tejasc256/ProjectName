@@ -89,7 +89,7 @@
     <string name="action_settings">Settings</string>
     <string name="title_activity_about_page">AboutPage</string>
     <string name="title_activity_about__us">About_Us</string>
-    <string name="faq_title">\tFrequently Asked \n\tQuestions</string>
+    <string name="faq_title">\tFAQ</string>
     <string name="faq_question1">\n   Q. What kinds of jobs can I find here?</string>
     <string name="faq_question2">\n   Q. Can i change my profile information?</string>
     <string name="faq_answer1">\n  A. Jobs in any field of engineering ranging\n from information technology to aviation\n engineering can be found.\n</string>

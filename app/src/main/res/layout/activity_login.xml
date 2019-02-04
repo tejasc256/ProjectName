@@ -37,14 +37,14 @@
 
             <ImageView
                 android:id="@+id/imageView3"
-                android:layout_width="197dp"
-                android:layout_height="136dp"
+                android:layout_width="183dp"
+                android:layout_height="118dp"
                 android:layout_gravity="center_horizontal"
-                app:srcCompat="@android:drawable/ic_media_play"
+                app:srcCompat="@drawable/logo1"
                 tools:layout_editor_absoluteX="1dp"
                 tools:layout_editor_absoluteY="64dp"
 
-                tools:srcCompat="@android:drawable/ic_media_play" />
+                tools:srcCompat="@drawable/logo1" />
             <android.support.design.widget.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
