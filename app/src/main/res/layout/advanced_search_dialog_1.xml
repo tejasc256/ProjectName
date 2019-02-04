@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent" android:layout_height="match_parent" android:padding="16dp">
+    android:layout_width="match_parent" android:layout_height="match_parent" android:padding="16dp"
+    android:background="@drawable/page_bg">
 
     <EditText
         android:id="@+id/adv_salary"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:textColor="#f9aa33"
         android:hint="@string/salary_hint"
         android:inputType="number" />
 
