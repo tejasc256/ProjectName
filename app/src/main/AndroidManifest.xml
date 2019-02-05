@@ -13,7 +13,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar">
-        <activity android:name=".TrainerReviewRatingSubmit"></activity>
+        <activity android:name=".Dashboard"></activity>
+        <activity android:name=".TrainerReviewRatingSubmit" />
         <activity android:name=".TrainerReviewRating" />
         <activity android:name=".ComapnyRegistrationFormSubmit" />
         <activity android:name=".CompanyRegistrationForm" />
