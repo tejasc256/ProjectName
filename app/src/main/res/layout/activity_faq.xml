@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/page_bg"
+    android:background="@color/colorgrey"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingTop="16dp"
     android:paddingRight="@dimen/activity_horizontal_margin"
@@ -21,11 +21,11 @@
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
-        android:background="@color/colorPrimary"
+        android:background="@color/colorgrey"
         android:text="@string/faq_title"
         android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Display2"
-        android:textColor="@color/colorAccent"
+        android:textColor="@color/colorPrimary"
         android:textSize="72sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -47,13 +47,14 @@
         android:layout_marginBottom="8dp"
         android:background="@drawable/button_bg2"
         android:text="@string/faq_question1"
+        android:textColor="#000000"
         android:textSize="16sp"
-        android:textColor="#ffffff"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.512"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2"
-        app:layout_constraintVertical_bias="0.1" />
+        app:layout_constraintVertical_bias="0.043" />
 
     <TextView
         android:id="@+id/textView4"
@@ -67,14 +68,14 @@
         android:layout_marginBottom="8dp"
         android:background="@drawable/button_bg2"
         android:text="@string/faq_answer1"
-        android:textColor="#ffffff"
+        android:textColor="#000000"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintHorizontal_bias="0.512"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.498" />
+        app:layout_constraintVertical_bias="0.399" />
 
     <TextView
         android:id="@+id/textView5"
@@ -88,14 +89,14 @@
         android:layout_marginBottom="8dp"
         android:background="@drawable/button_bg2"
         android:text="@string/faq_question2"
-        android:textColor="#ffffff"
+        android:textColor="#000000"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintHorizontal_bias="0.512"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2"
-        app:layout_constraintVertical_bias="0.649" />
+        app:layout_constraintVertical_bias="0.531" />
 
     <TextView
         android:id="@+id/textView6"
@@ -109,18 +110,14 @@
         android:layout_marginBottom="8dp"
         android:background="@drawable/button_bg2"
         android:text="@string/faq_answer2"
-        android:textColor="#ffffff"
+        android:textColor="#000000"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintHorizontal_bias="0.512"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.915" />
-
-
-
-
+        app:layout_constraintVertical_bias="0.78" />
 
 
 </android.support.constraint.ConstraintLayout>

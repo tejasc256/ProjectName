@@ -31,6 +31,8 @@
             android:label="@string/title_activity_about__us"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".FAQ" />
+        <activity android:name=".RegistrationType" />
+        <activity android:name=".RegistrationActivity"></activity>
         <activity android:name=".SearchResults"></activity>
     </application>
 
