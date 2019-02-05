@@ -88,7 +88,7 @@ public class Login extends AppCompatActivity implements LoaderCallbacks<Cursor> 
         fgb2.setOnClickListener(new OnClickListener(){
             @Override
             public void onClick(View v)
-            {startActivity(new Intent(Login.this,About_Us.class));}
+            {startActivity(new Intent(Login.this,RegistrationType.class));}
         });
 
         mEmailView = (AutoCompleteTextView) findViewById(R.id.email);
