@@ -45,6 +45,17 @@
                 tools:layout_editor_absoluteY="64dp"
                 tools:srcCompat="@drawable/logo1" />
 
+            <TextView
+                android:layout_width="332dp"
+                android:layout_height="42dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="prospect"
+                android:textSize="24dp"
+                android:textStyle="bold"
+                />
+
             <android.support.design.widget.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
@@ -54,7 +65,7 @@
                     style="@android:style/Widget.AutoCompleteTextView"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="16dp"
+                    android:layout_marginTop="10dp"
 
                     android:backgroundTint="#ffffff"
                     android:cursorVisible="false"
@@ -100,7 +111,7 @@
                 style="?android:textAppearanceSmall"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="48dp"
+                android:layout_marginTop="20dp"
                 android:background="@drawable/button_bg"
                 android:text="@string/sign_in_btn"
                 android:textColor="#FFFFFF"
