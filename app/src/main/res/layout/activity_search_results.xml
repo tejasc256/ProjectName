@@ -17,7 +17,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
-        android:background="@color/colorPrimaryDark"
+        android:background="@color/colorgrey"
         android:text="Search Results"
         android:textAlignment="center"
         android:textColor="@color/colorAccent"
