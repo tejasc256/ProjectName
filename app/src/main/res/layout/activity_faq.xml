@@ -5,47 +5,67 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorGray"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingTop="16dp"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin"
     tools:context=".FAQ">
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="349dp"
-        android:layout_height="86dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginBottom="8dp"
-        android:background="@color/colorGray"
-        android:text="@string/faq_title"
-        android:textAlignment="center"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
-        android:textColor="@color/colorPrimary"
-        android:textSize="72sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#003f91"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/faq_guideline"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="1.0">
 
+        <TextView
+            android:layout_width="332dp"
+            android:layout_height="42dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="prospect"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            />
 
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="349dp"
+            android:layout_height="86dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@color/colorPrimary"
+            android:text="@string/faq_title"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+            android:textColor="#ffffff"
+            android:textSize="32sp"
+            android:layout_gravity="center_vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+    </LinearLayout>
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="303dp"
-        android:layout_height="48dp"
+        android:layout_height="56dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
-        android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
-        android:layout_marginBottom="8dp"
-        android:background="@drawable/button_bg2"
+        android:layout_marginBottom="300dp"
+        android:background="@drawable/edittext_outline"
+        android:gravity="center"
         android:text="@string/faq_question1"
         android:textColor="#000000"
         android:textSize="16sp"
@@ -53,8 +73,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.512"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2"
-        app:layout_constraintVertical_bias="0.043" />
+
+        />
 
     <TextView
         android:id="@+id/textView4"
@@ -66,7 +86,8 @@
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
-        android:background="@drawable/button_bg2"
+        android:background="@drawable/edittext_outline"
+        android:gravity="center"
         android:text="@string/faq_answer1"
         android:textColor="#000000"
         android:textSize="16sp"
@@ -75,7 +96,7 @@
         app:layout_constraintHorizontal_bias="0.512"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.399" />
+        app:layout_constraintVertical_bias="0.6" />
 
     <TextView
         android:id="@+id/textView5"
@@ -83,11 +104,11 @@
         android:layout_height="48dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
-        android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
-        android:layout_marginBottom="8dp"
-        android:background="@drawable/button_bg2"
+        android:layout_marginBottom="108dp"
+        android:background="@drawable/edittext_outline"
+        android:gravity="center"
         android:text="@string/faq_question2"
         android:textColor="#000000"
         android:textSize="16sp"
@@ -95,8 +116,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.512"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2"
-        app:layout_constraintVertical_bias="0.531" />
+
+        />
 
     <TextView
         android:id="@+id/textView6"
@@ -108,7 +129,8 @@
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
-        android:background="@drawable/button_bg2"
+        android:background="@drawable/edittext_outline"
+        android:gravity="center"
         android:text="@string/faq_answer2"
         android:textColor="#000000"
         android:textSize="16sp"
@@ -117,7 +139,14 @@
         app:layout_constraintHorizontal_bias="0.512"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.78" />
+        app:layout_constraintVertical_bias="0.962" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/faq_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="180dp" />
 
 
 </android.support.constraint.ConstraintLayout>
