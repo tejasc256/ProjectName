@@ -7,12 +7,12 @@
     android:layout_height="match_parent"
     android:background="@drawable/loginbg"
     android:gravity="center_horizontal"
+    android:orientation="horizontal"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingTop="64dp"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
-    tools:context=".Login"
-    android:orientation="horizontal">
+    tools:context=".Login">
 
     <!-- Login progress -->
     <ProgressBar
@@ -46,6 +46,7 @@
                 tools:layout_editor_absoluteY="64dp"
 
                 tools:srcCompat="@drawable/logo" />
+
             <android.support.design.widget.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
@@ -62,11 +63,11 @@
                     android:hint="@string/prompt_email"
                     android:inputType="textEmailAddress"
                     android:maxLines="1"
-                    android:textColorHighlight="#ffffff"
-                    android:textColorLink="#ffffff"
                     android:singleLine="true"
                     android:textColor="#FFFFFF"
-                    android:textColorHint="#FFFFFF" />
+                    android:textColorHighlight="#ffffff"
+                    android:textColorHint="#FFFFFF"
+                    android:textColorLink="#ffffff" />
 
             </android.support.design.widget.TextInputLayout>
 
@@ -115,8 +116,8 @@
                 android:layout_marginTop="16dp"
                 android:background="@android:color/transparent"
                 android:text="@string/register_btn"
-                android:textSize="16sp"
                 android:textColor="#FFFFFF"
+                android:textSize="16sp"
                 android:textStyle="italic" />
 
             <Button
@@ -133,8 +134,6 @@
 
         </LinearLayout>
     </ScrollView>
-
-
 
 
 </LinearLayout>
