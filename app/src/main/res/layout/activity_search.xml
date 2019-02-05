@@ -109,7 +109,7 @@
             android:importantForAutofill="no"
             android:inputType="text"
             android:singleLine="false"
-            android:textColor="#22223b"
+            android:textColor="@color/colorBlueFont"
             android:textColorHint="@color/colorHintGray"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"

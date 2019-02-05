@@ -20,7 +20,7 @@
         <activity android:name=".CompanyRegistrationForm" />
         <activity android:name=".EngineersRegistrationFormSubmit" />
         <activity android:name=".EngineersRegistrationForm" />
-        <activity android:name=".company_registration_form" />
+        <!--<activity android:name=".company_registration_form" />-->
         <activity android:name=".ForgotPassword" />
         <activity
             android:name=".SearchActivity"

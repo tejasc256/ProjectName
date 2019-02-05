@@ -10,11 +10,14 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.example.android.projectname.R;
+
 public class Dashboard extends AppCompatActivity {
 
     TextView page1,page2;
     ViewPager viewPager;
     PagerViewAdapter pagerViewAdapter;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,26 +27,6 @@ public class Dashboard extends AppCompatActivity {
         page2 = (TextView)findViewById(R.id.page2);
         viewPager = (ViewPager)findViewById(R.id.fragment_container);
         pagerViewAdapter = new PagerViewAdapter(getSupportFragmentManager());
-
-
-        Button ratingbutton= (Button) findViewById(R.id.RatingButton);
-
-        ratingbutton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(Dashboard.this,TrainerReviewRating.class));
-            }
-        });
-
-
-        Button EditProfileButton= (Button) findViewById(R.id.EditProfileButton);
-
-        EditProfileButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(Dashboard.this,EngineersRegistrationForm.class));
-            }
-        });
 
         viewPager.setAdapter(pagerViewAdapter);
 
@@ -83,6 +66,49 @@ public class Dashboard extends AppCompatActivity {
 
             }
         });
+
+//
+//
+//        Button btn2 = (Button) findViewById(R.id.JobsButton);
+//
+//        btn2.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent myIntent2 = new Intent(Dashboard.this, SearchActivity.class);
+//                startActivity(myIntent2);
+//            }
+//        });
+//
+//        Button btn3 = (Button) findViewById(R.id.AboutUsButton);
+//
+//        btn3.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent myIntent3 = new Intent(Dashboard.this, About_Us.class);
+//                startActivity(myIntent3);
+//            }
+//        });
+//
+//        Button btn4 = (Button) findViewById(R.id.FaqButton);
+//
+//        btn4.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent myIntent4 = new Intent(Dashboard.this, FAQ.class);
+//                startActivity(myIntent4);
+//            }
+//        });
+//
+//        Button btn5 = (Button) findViewById(R.id.RatingButton);
+//
+//        btn5.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent myIntent4 = new Intent(Dashboard.this, TrainerReviewRating.class);
+//                startActivity(myIntent4);
+//            }
+//        });
+
     }
 
     @RequiresApi(api = Build.VERSION_CODES.M)

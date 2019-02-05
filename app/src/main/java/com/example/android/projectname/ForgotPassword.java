@@ -29,7 +29,7 @@ public class ForgotPassword extends AppCompatActivity {
                 String email = emailaddress.getText().toString();
                 if(isEmailValid(email)){
                     Toast.makeText(getApplicationContext(), toastString, Toast.LENGTH_LONG).show();
-                    Intent i = new Intent(ForgotPassword.this, SearchActivity.class);
+                    Intent i = new Intent(ForgotPassword.this, Login.class);
                     startActivity(i);
                 }
                 else{

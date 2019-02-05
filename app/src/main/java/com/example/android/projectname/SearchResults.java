@@ -50,9 +50,9 @@ public class SearchResults extends AppCompatActivity implements AdapterView.OnIt
             View rview = getLayoutInflater().inflate(R.layout.andvanced_search_dialog_2, null);
             rBuilder.setTitle("Select Region");
             final Spinner rspinner = (Spinner) rview.findViewById(R.id.spinner_region);
-            ArrayAdapter<String> radapter = new ArrayAdapter<String>(SearchResults.this, android.R.layout.simple_spinner_item,
+            ArrayAdapter<String> radapter = new ArrayAdapter<String>(SearchResults.this, R.layout.spinner_layout,
                     getResources().getStringArray(R.array.region_options));
-            radapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+            radapter.setDropDownViewResource(R.layout.spinner_dropdown_item);
             rspinner.setAdapter(radapter);
             rBuilder.setPositiveButton("Search", new DialogInterface.OnClickListener() {
                 @Override
@@ -115,7 +115,7 @@ public class SearchResults extends AppCompatActivity implements AdapterView.OnIt
             View rview = getLayoutInflater().inflate(R.layout.andvanced_search_dialog_2, null);
             rBuilder.setTitle("Select Experience");
             final Spinner rspinner = (Spinner) rview.findViewById(R.id.spinner_region);
-            ArrayAdapter<String> radapter = new ArrayAdapter<String>(SearchResults.this, android.R.layout.simple_spinner_item,
+            ArrayAdapter<String> radapter = new ArrayAdapter<String>(SearchResults.this, R.layout.spinner_layout,
                     getResources().getStringArray(R.array.experience_options));
             radapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
             rspinner.setAdapter(radapter);

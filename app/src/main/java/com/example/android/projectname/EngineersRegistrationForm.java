@@ -63,7 +63,7 @@ public class EngineersRegistrationForm extends AppCompatActivity implements Adap
                         contact.setError("Invalid Contact");
                     }
                 }else{
-                    Intent i = new Intent(getApplicationContext(), EngineersRegistrationFormSubmit.class);
+                    Intent i = new Intent(getApplicationContext(), Dashboard.class);
                     startActivity(i);
                 }
             }
