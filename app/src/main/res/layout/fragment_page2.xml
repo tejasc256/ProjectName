@@ -79,6 +79,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="100dp"
             android:layout_marginRight="100dp"
+            android:background="@drawable/search_box_outline"
             android:text="Rate the trainer" />
 
     </LinearLayout>

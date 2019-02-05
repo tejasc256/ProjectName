@@ -11,7 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="725dp"
         android:layout_margin="10dp"
-        android:background="@drawable/fragment_bg"
+        android:background="@color/colorGray"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -60,8 +60,10 @@
                     android:layout_marginLeft="8dp"
                     android:layout_marginTop="8dp"
                     android:layout_weight="1"
+                    android:text="      Name"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/edittext_outline"
                     android:textColor="#000"
-                    android:text="Name"
                     android:textSize="16sp" />
 
                 <TextView
@@ -70,8 +72,10 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="8dp"
                     android:layout_weight="1"
+                    android:text="      Contact"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/edittext_outline"
                     android:textColor="#000"
-                    android:text="Contact"
                     android:textSize="16sp" />
 
                 <TextView
@@ -80,7 +84,9 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="8dp"
                     android:layout_weight="1"
-                    android:text="E-mail"
+                    android:text="      E-mail"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/edittext_outline"
                     android:textColor="#000"
                     android:textSize="16sp" />
             </LinearLayout>
@@ -111,7 +117,14 @@
                 android:layout_marginLeft="24dp"
                 android:layout_marginTop="8dp"
                 android:text="Edit Profile"
+
+                android:background="@drawable/search_box_outline"
                 android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
 
             <TextView
                 android:id="@+id/EducationTextView"
@@ -119,18 +132,22 @@
                 android:layout_height="50dp"
                 android:layout_marginLeft="8dp"
                 android:layout_marginTop="8dp"
-                android:text="Education"
                 android:textColor="#000"
+                android:background="@drawable/edittext_outline"
+                android:text="      Education"
+                android:gravity="center_vertical"
                 android:textSize="16sp" />
 
             <TextView
                 android:id="@+id/BranchTextView"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
+                android:textColor="#000"
                 android:layout_marginLeft="8dp"
                 android:layout_marginTop="8dp"
-                android:text="Branch"
-                android:textColor="#000"
+                android:text="      Branch"
+                android:gravity="center_vertical"
+                android:background="@drawable/edittext_outline"
                 android:textSize="16sp" />
 
             <TextView
@@ -138,9 +155,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_marginLeft="8dp"
-                android:layout_marginTop="8dp"
-                android:text="JobExperience"
                 android:textColor="#000"
+                android:layout_marginTop="8dp"
+                android:text="      JobExperience"
+                android:gravity="center_vertical"
+                android:background="@drawable/edittext_outline"
                 android:textSize="16sp" />
 
             <TextView
@@ -148,10 +167,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
 
-            <TextView
-                android:id="@+id/textView15"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+
 
             <Button
                 android:id="@+id/JobsButton"
@@ -159,6 +175,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="100dp"
                 android:layout_marginRight="100dp"
+                android:background="@drawable/search_box_outline"
                 android:text="get started" />
 
             <TextView
@@ -176,14 +193,23 @@
                     android:id="@+id/AboutUsButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
                     android:layout_weight="1"
+                    android:background="@drawable/search_box_outline"
                     android:text="about us" />
+                <TextView
+                    android:id="@+id/textView20"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content" />
 
                 <Button
                     android:id="@+id/FaqButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
                     android:layout_weight="1"
+                    android:background="@drawable/search_box_outline"
                     android:text="Faq" />
             </LinearLayout>
 
