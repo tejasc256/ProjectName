@@ -14,11 +14,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar">
-        <activity android:name=".Login"></activity>
         <activity android:name=".ForgotPassword" />
         <activity
             android:name=".SearchActivity"
-            android:label="@string/title_activity_scrolling">
+                  android:label="@string/title_activity_scrolling"></activity>
+        <activity android:name=".Login">
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

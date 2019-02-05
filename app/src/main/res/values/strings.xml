@@ -83,7 +83,7 @@
     <string name="about_us">\nWe are a team of students from NITK developing and expanding an application for skilled yet jobless engineers to find their dream jobs as well as hone their skills for better opportunities in the future. The app also serves as a platform for employers to find skilled engineers and as a platform for training companies to get more students."
 </string>
     <string name="title_activity_about__us">About_Us</string>
-    <string name="faq_title">\tFrequently Asked \n\tQuestions</string>
+    <string name="faq_title">\tFAQ</string>
     <string name="faq_question1">\n   Q. What kinds of jobs can I find here?</string>
     <string name="faq_question2">\n   Q. Can i change my profile information?</string>
     <string name="faq_answer1">\n  A. Jobs in any field of engineering ranging\n from information technology to aviation\n engineering can be found.\n</string>
