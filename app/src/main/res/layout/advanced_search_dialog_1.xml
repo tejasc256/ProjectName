@@ -7,7 +7,6 @@
         android:id="@+id/adv_salary"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textColor="#f9aa33"
         android:hint="@string/salary_hint"
         android:inputType="number" />
 
