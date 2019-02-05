@@ -21,23 +21,26 @@
         <activity android:name=".EngineersRegistrationFormSubmit" />
         <activity android:name=".EngineersRegistrationForm" />
         <activity android:name=".company_registration_form" />
+        <activity android:name=".ForgotPassword" />
+        <activity
+            android:name=".SearchActivity"
+                  android:label="@string/title_activity_scrolling"></activity>
         <activity android:name=".Login">
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".SearchResults" />
-        <activity android:name=".ForgotPassword" />
-        <activity
-            android:name=".SearchActivity"
-            android:label="@string/title_activity_scrolling" />
         <activity
             android:name=".About_Us"
             android:label="@string/title_activity_about__us"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".FAQ" />
+        <activity android:name=".RegistrationType" />
+        <activity android:name=".RegistrationActivity"></activity>
+        <activity android:name=".SearchResults"></activity>
     </application>
 
 </manifest>

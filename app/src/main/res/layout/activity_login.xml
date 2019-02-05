@@ -5,14 +5,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/loginbg"
     android:gravity="center_horizontal"
+    android:orientation="horizontal"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingTop="64dp"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
-    tools:context=".Login"
-    android:orientation="horizontal">
+    tools:context=".Login">
 
     <!-- Login progress -->
     <ProgressBar
@@ -38,14 +37,14 @@
 
             <ImageView
                 android:id="@+id/imageView3"
-                android:layout_width="103dp"
-                android:layout_height="67dp"
+                android:layout_width="183dp"
+                android:layout_height="118dp"
                 android:layout_gravity="center_horizontal"
-                app:srcCompat="@mipmap/logo"
+                app:srcCompat="@drawable/logo1"
                 tools:layout_editor_absoluteX="1dp"
                 tools:layout_editor_absoluteY="64dp"
+                tools:srcCompat="@drawable/logo1" />
 
-                tools:srcCompat="@drawable/logo" />
             <android.support.design.widget.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
@@ -55,18 +54,18 @@
                     style="@android:style/Widget.AutoCompleteTextView"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="102dp"
+                    android:layout_marginTop="16dp"
 
                     android:backgroundTint="#ffffff"
                     android:cursorVisible="false"
                     android:hint="@string/prompt_email"
                     android:inputType="textEmailAddress"
                     android:maxLines="1"
-                    android:textColorHighlight="#ffffff"
-                    android:textColorLink="#ffffff"
                     android:singleLine="true"
                     android:textColor="#FFFFFF"
-                    android:textColorHint="#FFFFFF" />
+                    android:textColorHighlight="#ffffff"
+                    android:textColorHint="#FFFFFF"
+                    android:textColorLink="#ffffff" />
 
             </android.support.design.widget.TextInputLayout>
 
@@ -112,11 +111,11 @@
                 style="?android:textAppearanceSmall"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
+                android:layout_marginTop="12dp"
                 android:background="@android:color/transparent"
                 android:text="@string/register_btn"
-                android:textSize="16sp"
                 android:textColor="#FFFFFF"
+                android:textSize="16sp"
                 android:textStyle="italic" />
 
             <Button
@@ -124,17 +123,15 @@
                 style="?android:textAppearanceSmall"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="28dp"
-                android:background="@android:color/transparent"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/button_bg2"
                 android:text="@string/forgot_btn"
-                android:textColor="#80DEEA"
+                android:textColor="#ffffff"
                 android:textStyle="bold" />
 
 
         </LinearLayout>
     </ScrollView>
-
-
 
 
 </LinearLayout>
