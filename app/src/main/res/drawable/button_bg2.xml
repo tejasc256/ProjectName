@@ -5,7 +5,7 @@
             <!--apply button background transparent, full opacity-->
             <solid android:color="#00ffffff"/>
             <!--make button border solid color, nontransparent-->
-            <stroke android:color="#f9aa33" android:width="2dp"/>
+            <stroke android:color="@color/colorAccent" android:width="2dp"/>
             <corners android:radius="8dp"/>
         </shape>
     </item>
