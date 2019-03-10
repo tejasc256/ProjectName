@@ -4,46 +4,36 @@ import android.content.Intent;
 import android.os.Build;
 import android.support.annotation.RequiresApi;
 import android.support.v4.view.ViewPager;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+
+import com.example.android.projectname.R;
 
 public class Dashboard extends AppCompatActivity {
 
     TextView page1,page2;
     ViewPager viewPager;
     PagerViewAdapter pagerViewAdapter;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dashboard);
+        //Toolbar toolbar = findViewById(R.id.toolbar);
+        //setSupportActionBar(toolbar);
+        //ActionBar actionbar = getSupportActionBar();
+        //actionbar.setDisplayHomeAsUpEnabled(true);
+        //actionbar.setHomeAsUpIndicator(R.drawable.ic_menu);
 
         page1 = (TextView)findViewById(R.id.page1);
         page2 = (TextView)findViewById(R.id.page2);
         viewPager = (ViewPager)findViewById(R.id.fragment_container);
         pagerViewAdapter = new PagerViewAdapter(getSupportFragmentManager());
-
-
-        Button ratingbutton= (Button) findViewById(R.id.RatingButton);
-
-        ratingbutton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(Dashboard.this,TrainerReviewRating.class));
-            }
-        });
-
-
-        Button EditProfileButton= (Button) findViewById(R.id.EditProfileButton);
-
-        EditProfileButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(Dashboard.this,EngineersRegistrationForm.class));
-            }
-        });
 
         viewPager.setAdapter(pagerViewAdapter);
 
@@ -83,6 +73,49 @@ public class Dashboard extends AppCompatActivity {
 
             }
         });
+
+//
+//
+//        Button btn2 = (Button) findViewById(R.id.JobsButton);
+//
+//        btn2.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent myIntent2 = new Intent(Dashboard.this, SearchActivity.class);
+//                startActivity(myIntent2);
+//            }
+//        });
+//
+//        Button btn3 = (Button) findViewById(R.id.AboutUsButton);
+//
+//        btn3.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent myIntent3 = new Intent(Dashboard.this, About_Us.class);
+//                startActivity(myIntent3);
+//            }
+//        });
+//
+//        Button btn4 = (Button) findViewById(R.id.FaqButton);
+//
+//        btn4.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent myIntent4 = new Intent(Dashboard.this, FAQ.class);
+//                startActivity(myIntent4);
+//            }
+//        });
+//
+//        Button btn5 = (Button) findViewById(R.id.RatingButton);
+//
+//        btn5.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent myIntent4 = new Intent(Dashboard.this, TrainerReviewRating.class);
+//                startActivity(myIntent4);
+//            }
+//        });
+
     }
 
     @RequiresApi(api = Build.VERSION_CODES.M)
@@ -91,19 +124,19 @@ public class Dashboard extends AppCompatActivity {
         if (position == 0)
         {
             page1.setTextSize(25);
-            page1.setTextColor(getColor(R.color.bright_color));
+            page1.setTextColor(getColor(R.color.colorWhite));
 
             page2.setTextSize(20);
-            page2.setTextColor(getColor(R.color.light_color));
+            page2.setTextColor(getColor(R.color.colorWhite));
         }
 
         if (position == 1)
         {
             page1.setTextSize(20);
-            page1.setTextColor(getColor(R.color.light_color));
+            page1.setTextColor(getColor(R.color.colorWhite));
 
             page2.setTextSize(25);
-            page2.setTextColor(getColor(R.color.bright_color));
+            page2.setTextColor(getColor(R.color.colorWhite));
         }
     }
 }

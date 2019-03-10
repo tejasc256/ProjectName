@@ -11,6 +11,8 @@ import android.content.Intent;
         import android.widget.Spinner;
         import android.widget.Toast;
 
+import java.util.regex.Pattern;
+
 public class CompanyRegistrationForm extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
 
     @Override
@@ -27,12 +29,12 @@ public class CompanyRegistrationForm extends AppCompatActivity implements Adapte
                 EditText companyname = (EditText) findViewById(R.id.companyname);
                 EditText email = (EditText) findViewById(R.id.EmailInput);
 
-                if(companyname.getText().toString().isEmpty() && email.getText().toString().isEmpty()){
+                if(!validate()){
 
 
 
                     companyname.setError( "Company Name is required!" );
-                    email.setError( "Email is required!" );
+                    email.setError( "Email is not valid!" );
 
 
                 }else{
@@ -61,6 +63,35 @@ public class CompanyRegistrationForm extends AppCompatActivity implements Adapte
         adapter3.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinner3.setAdapter(adapter3);
         spinner3.setOnItemSelectedListener(this);
+    }
+
+    private boolean isEmailValid(String email) {
+        String emailRegex = "^[a-zA-Z0-9_+&*-]+(?:\\."+
+                "[a-zA-Z0-9_+&*-]+)*@" +
+                "(?:[a-zA-Z0-9-]+\\.)+[a-z" +
+                "A-Z]{2,7}$";
+
+        Pattern pat = Pattern.compile(emailRegex);
+        if (email == null)
+            return false;
+        return pat.matcher(email).matches();
+    }
+
+    private Boolean validate(){
+        Boolean result = false;
+
+        EditText companyname = (EditText) findViewById(R.id.companyname);
+        EditText email = (EditText) findViewById(R.id.EmailInput);
+
+
+//        if(name.isEmpty() || password.isEmpty() || email.isEmpty() || age.isEmpty() || imagePath == null){
+        if(companyname.getText().toString().isEmpty() || !isEmailValid(email.getText().toString())){
+            Toast.makeText(this, "Please enter all the details correctly", Toast.LENGTH_SHORT).show();
+        }else{
+            result = true;
+        }
+
+        return result;
     }
 
     @Override

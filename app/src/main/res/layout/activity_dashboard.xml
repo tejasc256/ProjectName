@@ -4,23 +4,34 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bg_color"
+    android:background="@color/colorBlue"
     tools:context=".Dashboard">
 
+    <!--<android.support.v7.widget.Toolbar-->
+        <!--android:id="@+id/toolbar"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="?attr/actionBarSize"-->
+        <!--android:background="?attr/colorPrimaryDark"-->
+        <!--android:theme="@style/ThemeOverlay.AppCompat.ActionBar"-->
+        <!--android:elevation="0dp"/>-->
 
-    <include
-        android:id="@+id/include2"
-        layout="@layout/tab_bar"
-        app:layout_constraintBottom_toTopOf="@+id/fragment_container" />
 
-    <android.support.v4.view.ViewPager
-        android:id="@+id/fragment_container"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@+id/include2"
-        tools:layout_editor_absoluteX="50dp">
+        <include
+            android:id="@+id/include2"
+            layout="@layout/tab_bar"
+            app:layout_constraintBottom_toTopOf="@+id/fragment_container" />
 
-    </android.support.v4.view.ViewPager>
+        <android.support.v4.view.ViewPager
+            android:id="@+id/fragment_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/include2">
+
+        </android.support.v4.view.ViewPager>
+
+
 
 
 </android.support.constraint.ConstraintLayout>

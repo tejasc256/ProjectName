@@ -34,7 +34,9 @@
             android:layout_height="40dp"
             android:layout_marginLeft="8dp"
             android:layout_marginTop="8dp"
-            android:text="Course 1"
+            android:text="      Engineer 1"
+            android:gravity="center_vertical"
+            android:background="@drawable/edittext_outline"
             android:textColor="#000"
             android:textSize="18sp" />
 
@@ -44,7 +46,9 @@
             android:layout_height="40dp"
             android:layout_marginLeft="8dp"
             android:layout_marginTop="8dp"
-            android:text="Course 2"
+            android:text="      Engineer 2"
+            android:gravity="center_vertical"
+            android:background="@drawable/edittext_outline"
             android:textColor="#000"
             android:textSize="18sp" />
 
@@ -54,7 +58,9 @@
             android:layout_height="40dp"
             android:layout_marginLeft="8dp"
             android:layout_marginTop="8dp"
-            android:text="Course 3"
+            android:text="      Engineer 3"
+            android:gravity="center_vertical"
+            android:background="@drawable/edittext_outline"
             android:textColor="#000"
             android:textSize="18sp" />
 
@@ -64,7 +70,9 @@
             android:layout_height="40dp"
             android:layout_marginLeft="8dp"
             android:layout_marginTop="8dp"
-            android:text="Course 4"
+            android:background="@drawable/edittext_outline"
+            android:text="      Engineer 4"
+            android:gravity="center_vertical"
             android:textColor="#000"
             android:textSize="18sp" />
 
@@ -73,13 +81,14 @@
             android:layout_width="match_parent"
             android:layout_height="100dp" />
 
-        <Button
-            android:id="@+id/RatingButton"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="100dp"
-            android:layout_marginRight="100dp"
-            android:text="Rate the trainer" />
+        <!--<Button-->
+            <!--android:id="@+id/RatingButton"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="100dp"-->
+            <!--android:layout_marginRight="100dp"-->
+            <!--android:background="@drawable/search_box_outline"-->
+            <!--android:text="Rate the trainer" />-->
 
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>

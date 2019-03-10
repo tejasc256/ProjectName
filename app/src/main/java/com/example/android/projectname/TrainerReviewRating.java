@@ -38,10 +38,10 @@ public class TrainerReviewRating extends AppCompatActivity implements AdapterVie
                     review.setError( "Review is required!" );
 
                 }else{
-                    Intent i = new Intent(getApplicationContext(), TrainerReviewRatingSubmit.class);
+                    Intent i = new Intent(getApplicationContext(), Dashboard.class);
                     startActivity(i);
                 }
-                //startActivity(new Intent(MainActivity.this, Submit.class));
+
             }
         });
 

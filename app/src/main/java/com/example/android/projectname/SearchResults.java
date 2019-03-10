@@ -23,15 +23,15 @@ public class SearchResults extends AppCompatActivity implements AdapterView.OnIt
 
         Spinner searchspinner = (Spinner) findViewById(R.id.spinner_search);
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
-                R.array.advanced_search_options, R.layout.spinner_layout);
-        adapter.setDropDownViewResource(R.layout.spinner_dropdown_item);
+                R.array.advanced_search_options, R.layout.spinner_layout1);
+        adapter.setDropDownViewResource(R.layout.spinner_dropdown_layout1);
         searchspinner.setAdapter(adapter);
 
         TextView searchresult = (TextView) findViewById(R.id.textViewSearchResult1);
         Intent i = getIntent();
         String result = i.getStringExtra("searchstring");
         int pos = i.getIntExtra("position", 0);
-        searchspinner.setSelection(pos, false);
+        //searchspinner.setSelection(pos, false);
 //        result += pos;
         searchresult.setText(result);
 
@@ -50,9 +50,9 @@ public class SearchResults extends AppCompatActivity implements AdapterView.OnIt
             View rview = getLayoutInflater().inflate(R.layout.andvanced_search_dialog_2, null);
             rBuilder.setTitle("Select Region");
             final Spinner rspinner = (Spinner) rview.findViewById(R.id.spinner_region);
-            ArrayAdapter<String> radapter = new ArrayAdapter<String>(SearchResults.this, android.R.layout.simple_spinner_item,
+            ArrayAdapter<String> radapter = new ArrayAdapter<String>(SearchResults.this, R.layout.spinner_layout,
                     getResources().getStringArray(R.array.region_options));
-            radapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+            radapter.setDropDownViewResource(R.layout.spinner_dropdown_item);
             rspinner.setAdapter(radapter);
             rBuilder.setPositiveButton("Search", new DialogInterface.OnClickListener() {
                 @Override
@@ -115,9 +115,9 @@ public class SearchResults extends AppCompatActivity implements AdapterView.OnIt
             View rview = getLayoutInflater().inflate(R.layout.andvanced_search_dialog_2, null);
             rBuilder.setTitle("Select Experience");
             final Spinner rspinner = (Spinner) rview.findViewById(R.id.spinner_region);
-            ArrayAdapter<String> radapter = new ArrayAdapter<String>(SearchResults.this, android.R.layout.simple_spinner_item,
+            ArrayAdapter<String> radapter = new ArrayAdapter<String>(SearchResults.this, R.layout.spinner_layout,
                     getResources().getStringArray(R.array.experience_options));
-            radapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+            radapter.setDropDownViewResource(R.layout.spinner_dropdown_item);
             rspinner.setAdapter(radapter);
             rBuilder.setPositiveButton("Search", new DialogInterface.OnClickListener() {
                 @Override
@@ -148,3 +148,4 @@ public class SearchResults extends AppCompatActivity implements AdapterView.OnIt
 
     }
 }
+

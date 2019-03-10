@@ -10,7 +10,7 @@
     <color name="medium_color">#64B5F6</color>
     <color name="light_color">#BBDEFB</color>
     <color name="white">#ffffff</color>
-    
+    <color name="colorLightblue">#b7e1fe</color>
 
     <color name="colorPrimaryDark">#22223b</color>
     <color name="colorAccent">#4fbbff</color>

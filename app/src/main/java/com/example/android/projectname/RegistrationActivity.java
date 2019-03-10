@@ -87,13 +87,15 @@ public class  RegistrationActivity extends AppCompatActivity{
                     String user_email = userEmail.getText().toString().trim();
                     String user_password = userPassword.getText().toString().trim();
 
-                    firebaseAuth.createUserWithEmailAndPassword(user_email, user_password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+                    firebaseAuth.createUserWithEmailAndPassword(user_email, user_password).addOnCompleteListener(RegistrationActivity.this,new OnCompleteListener<AuthResult>() {
                         @Override
                         public void onComplete(@NonNull Task<AuthResult> task) {
 
                             if(task.isSuccessful()){
                                 Toast.makeText(RegistrationActivity.this,"Successfully registered. Confirmation link sent.",Toast.LENGTH_LONG).show();
                                 sendEmailVerification();
+                                Intent i=new Intent(RegistrationActivity.this, Login.class);
+                                startActivity(i);
 
                             }else{
                                 FirebaseAuthException e = (FirebaseAuthException)task.getException();

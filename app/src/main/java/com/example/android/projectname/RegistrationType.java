@@ -34,7 +34,7 @@ public class RegistrationType extends AppCompatActivity {
         nButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(RegistrationType.this, RegistrationActivity.class));
+                startActivity(new Intent(RegistrationType.this, CompanyRegistrationForm.class));
 
             }
         });
@@ -42,7 +42,7 @@ public class RegistrationType extends AppCompatActivity {
         oButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(RegistrationType.this, RegistrationActivity.class));
+                startActivity(new Intent(RegistrationType.this, CompanyRegistrationForm.class));
 
             }
         });

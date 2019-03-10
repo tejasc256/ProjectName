@@ -145,16 +145,15 @@
     </string>
     <string name="title_activity_scrolling">ScrollingActivity</string>
     <string name="sign_in_btn">SIGN IN</string>
-    <string name="register_btn">Don\'t have an account? Register now</string>
+    <string name="register_btn">Don\'t have an account? Register Now</string>
     <string name="forgot_btn">Forgot Password</string>
     <string name="action_password">Password</string>
     <string name="about_us">\nWe are a team of students from NITK developing and expanding an application for skilled yet jobless engineers to find their dream jobs as well as hone their skills for better opportunities in the future. The app also serves as a platform for employers to find skilled engineers and as a platform for training companies to get more students."
 </string>
     <string name="title_activity_about__us">About Us</string>
     <string name="faq_title">Frequently Asked Questions</string>
-    <string name="faq_question1">Q. What kinds of jobs can I find here?</string>
-    <string name="faq_question2">Q. Can i change my profile information?</string>
-    <string name="faq_answer1">A. Jobs in any field of engineering ranging from information technology to aviation engineering can be found.</string>
-    <string name="faq_answer2">A. Yes, all information shown on the dashboard can be changed.</string>
+    <string name="faq_question1">\nQ. What kinds of jobs can I find here?\n\nA. Jobs in any field of engineering ranging from information technology to aviation engineering can be found.\n</string>
+    <string name="faq_question2">\nQ. Can i change my profile information?\n\nA. Yes, all information shown on the dashboard can be changed.\n</string>
+
 
 </resources>

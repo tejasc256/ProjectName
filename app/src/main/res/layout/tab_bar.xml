@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:orientation="horizontal">
 
     <TextView
@@ -13,17 +13,17 @@
         android:textStyle="bold"
         android:gravity="center"
         android:layout_weight="1"
-        android:textColor="@color/bright_color"/>
+        android:textColor="@color/white"/>
 
     <TextView
         android:id="@+id/page2"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:text="Courses"
+        android:text="Notifications"
         android:layout_weight="1"
         android:textSize="20dp"
         android:textStyle="bold"
         android:gravity="center"
-        android:textColor="@color/medium_color"/>
+        android:textColor="@color/white"/>
 
 </LinearLayout>

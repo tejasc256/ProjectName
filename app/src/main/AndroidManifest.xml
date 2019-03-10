@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.android.projectname">
+
     <!-- To auto-complete the email text field in the login form with the user's emails -->
     <uses-permission android:name="android.permission.GET_ACCOUNTS" />
     <uses-permission android:name="android.permission.READ_PROFILE" />
@@ -13,34 +14,39 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar">
-        <activity android:name=".Dashboard"></activity>
+        <activity android:name=".Dashboard" />
         <activity android:name=".TrainerReviewRatingSubmit" />
         <activity android:name=".TrainerReviewRating" />
         <activity android:name=".ComapnyRegistrationFormSubmit" />
         <activity android:name=".CompanyRegistrationForm" />
         <activity android:name=".EngineersRegistrationFormSubmit" />
         <activity android:name=".EngineersRegistrationForm" />
-        <activity android:name=".company_registration_form" />
         <activity android:name=".ForgotPassword" />
         <activity
             android:name=".SearchActivity"
-                  android:label="@string/title_activity_scrolling"></activity>
+            android:label="@string/title_activity_scrolling" />
         <activity android:name=".Login">
-            android:windowSoftInputMode="adjustResize|stateAlwaysHidden
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+            <!-- android:windowSoftInputMode="adjustResize|stateAlwaysHidden" -->
+
         </activity>
         <activity
             android:name=".About_Us"
             android:label="@string/title_activity_about__us"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".FAQ" />
-        <activity android:name=".RegistrationType" android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".RegistrationActivity"></activity>
-        <activity android:name=".SearchResults"></activity>
+        <activity
+            android:name=".RegistrationType"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".RegistrationActivity" />
+        <activity android:name=".SearchResults" />
+        <activity android:name=".Feedback" />
+        <activity android:name=".Certificate" />
+        <activity android:name=".Start"><intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter></activity>
     </application>
 
 </manifest>
